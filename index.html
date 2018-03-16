@@ -1,54 +1,99 @@
-<html>
+<!-- <html> -->
     <head>
         <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Prata|Questrial" rel="stylesheet">
     </head>
     <body>
-    <header>
-        <a href="#main-menu" 
-           class="menu-toggle"
-           role="button"
-           id="main-menu-toggle">
-        </a>
-        <div class="logo">&#9776;</div>
-        <nav id="main-menu"
-             class="main-menu"
-             role="navigation">
-            <a href="main-menu-toggle"
-               class="menu-close"
-               role="button"
-               id="main-menu-close">
-            </a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="main-menu-toggle" 
-            class="backdrop" 
-            tabindex="-1">
-    </header>
-    </div>
-    </nav>
-    <a href="#main-menu-toggle" clss="backdrop" hidden></a>
-    </header>
-    
-    <main>
-        <div class="name">
-                <h3 class="name">Software<br>Developer</h3>
+    <div id="title-nav">
+        <div class="title">
+                <h3>Software<br>Developer</h3>
                 <h1 class="name">Ellen<br>Kramp</h1>
         </div>
-    <footer>
+        <nav>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#education">Education</a></h4>
+                <h4><a href="#skillset">Skillset</a></h4>
+                <h4><a href="#github">Github</a></h4>
+                <h4><a href="#experience">Experience</a></h4>
+        </nav>
+    </div>
+    <div id="about">
+        <div class="pic-sum">
+        <!-- <img class="me" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAMABADGAAwAAQAAAAAAAA4DAAAAJGEzNDcwZWRmLTk3MzktNDczMi05MDg5LWRmM2FlYTRlNzZiMg.jpg"> -->
+        <header>README.md</header>
+        <div class="line"></div>
+                <span class="quote"><br>My path in the professional world started out at an IT Helpdesk</span><br><p>despite having majored in mass communications.
+                What seemed like a disappointing first gig inconspicuously laid the foundation for my future career path. It was through this
+                position that I was introduced to software, becoming familiar with troubleshooting and reporting bugs, acting as a liaison between 
+                customers and software engineers. 
+                <br><br>
+                Still, I desired to carry out the blueprint on my Bachelor's degree. I entered into a position in
+                marketing and communications, pursuing what I thought was the "right path". When my company's website needed an overhaul,
+                I began tinkering with simple web design and javascript programming, and realized this was what I was truly passionate about.
+                <br><br>
+                I scowered the web for resources and began teaching myself web development.
+                While I was making a lot of progress on my own, I felt that I was in need of two things to turn my newfound passion into a career: 
+                more time to learn, and a support system of other software developers. That's when I took the plunge and quit my job to pursue coding full-time.
+                <br><br>
+                I am finally in my element, thriving on unique application of both creativity and logic that is 
+                so intrinsic to software engineering.
+            </p>
+        </div>
+    </div>
+    
+    <div id="education">
+        <header>Education</header>
+        <div class="line"></div>
+        <p><span class="year">[2018] DigitalCrafts</span><br>Full-stack Immersive Coding Bootcamp</p>
+        <p><span class="year">[2017] FreeCodeCamp</span><br>Front End Development Courses</p>
+        <p><span class="year">[2011] University of South Florida</span><br>B.A., Mass Communications</p>
+        <div class="logos">
+                <img src="https://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png">
+                <img src="https://design-style-guide.freecodecamp.org/downloads/freeCodeCamp-alternative.png" id="free-cc">
+                <img src="https://advance.fiu.edu/_assets/images/USF.bmp">
+        </div>
+    </div>
+    <div id="skillset">
+        <header>What I Can Do</header>
+        <div class="line"></div>
+        <div class="skills">
+        <div>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>HTML/CSS</p>
+            <p>GitHub</p>
+        </div>
+        <div>
+            <p>Debugging</p>
+            <p>Design</p>
+            <p>Collaboration</p>
+            <p>Communication</p>
+        </div>
+        </div>
             <div class="logos">
-                    <img height="100" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
-                    <img height="100" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
-                    <img height="100" src="http://www.pngall.com/wp-content/uploads/2016/05/Python-Logo-PNG-Image.png">
-            </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+                    <img src="http://www.pngall.com/wp-content/uploads/2016/05/Python-Logo-PNG-Image.png">
+                    <img src="http://thewebrocks.com/demos/html5-3d-css/html5.png">
+                    <img src="http://hguochen.com/static/img/tech/css3.png">
+                    <img src="https://cdn1.iconfinder.com/data/icons/simple-icons/256/github-256-black.png">
+            </div>   
+    </div>
+    <div id="github">
+            <header>What I'm Doing</header>
+            <div class="line"></div>        
+    </div>
+    <div id="experience">
+            <header>What I've Done</header>
+            <div class="line"></div>    
+            <p><span class="year">[2016] Reynolds, Smith, and Hills</span><br>Marketing Communications Specialist</p>    
+            <p><span class="year">[2014] MediaLab 3D Solutions</span><br>Digital Media Writer</p>
+            <p><span class="year">[2012] Talk Fusion</span><br>IT Helpdesk Technician</p>
+            <p><span class="year">[2011] CPI Group</span><br>Purchasing Assistant</p>
+            <p><span class="year">[2010] Clear Channel Outdoor</span><br>Media Intern</p>
+    </div>
+    <footer>
     </footer>
-    </main>
+    <script src="main.js"></script>
     </body>
 </html>
