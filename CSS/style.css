@@ -179,8 +179,13 @@ h1.name {
     margin-top: 5%;
 }
 
-.logos img {
-    height: 15%;
+#education .logos img {
+    height: 10%;
+    object-fit: cover;
+}
+
+#skillset .logos img {
+    height: 20%;
     object-fit: cover;
 }
 
@@ -334,7 +339,7 @@ h5 {
         height: 100vh;
         width: 180%;
         font-size: 2em;
-        margin-bottom: 80%;
+        margin-bottom: 120%;
     }
 
 
