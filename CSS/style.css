@@ -4,11 +4,15 @@ body {
     margin-right: 5%;
     background-color: rgb(255, 255, 0);
     font-family: 'Questrial', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .arrows img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
     width: 50px;
-    margin-left: 48%;
     margin-top: 2%;
     opacity: .2;
 }
@@ -112,7 +116,7 @@ h1.name {
     align-items: flex-start;
     padding: 2%;
 }
-.pic-sum {
+.pic-sum p {
     width: 65%;
     padding: 2%;
 }
