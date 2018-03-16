@@ -8,13 +8,16 @@ body {
 }
 
 .arrows img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
     width: 80px;
     margin-top: 2%;
     opacity: .2;
+    margin-top: 0;
     margin-bottom: 30px;
+}
+a.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #title-nav {
@@ -51,8 +54,7 @@ a {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 100vh;
-    margin-bottom: 10%;
+    height: 90vh;
 }
 
 header {
@@ -133,8 +135,9 @@ h1.name {
 }
 
 #education, #skillset, #experience, {
-    height: 100vh;
+    height: 90vh;
     font-size: 1.8em;
+    margin-bottom: 5%;
 }
 
 #education p, #skillset p {
@@ -153,8 +156,8 @@ h1.name {
 }
 
 #skillset, #contact {
-    margin: 20px 0 20px 0;
-    height: 100vh;
+    margin: 80px 0 20px 0;
+    height: 85vh;
 }
 
 .year {
@@ -167,19 +170,18 @@ h1.name {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    bottom: 5;
-    left: 5;
-    border-style: solid;
+    /* border-style: solid;
     border-bottom-width: 10px;
     border-top-width: 10px;
     border-right-width: 0;
-    border-left-width: 0;
+    border-left-width: 0; */
     padding: 2%;
     margin-top: 5%;
 }
 
 .logos img {
     height: 15%;
+    object-fit: cover;
 }
 
 a img {
@@ -250,29 +252,113 @@ h5 {
     padding: 5px;
 }
 
-@media (max-width: 700px) {
-    .logos{
-        width: 33%; }/*side by side*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
     body {
-        width: 33%;
-        font-size: 33%;
+        font-size: 1.3em;
     }
-    a img {
-        width: 33%;
+    #title-nav {
+        margin-top: 40%;
+        display: flex;
+        flex-flow: column;
+        height: 100vh;
     }
-
-    .row p {
-        margin-left: 50%;
-        margin-right: 50%;
+    nav {
+        font-size: 2em;
+        width: 50vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        padding-bottom: 2%;
+    }
+    #about {
+        margin-top: 100%;
+        height: 100vh;
+        width: 200%;
+        font-size: 2em;
+    }
+    .line {
+        width: 100vw;
     }
 
     header {
-        font-size: 33%;
+        font-size: 2em;
+    }
+
+    .quote {
+        line-height: 150%;
+    }
+
+    #education {
+        margin-top: 170%;
+        height: 100vh;
+        width: 200%;
+        font-size: 2em;
+        margin-bottom: 80%;
+    }
+    .logos {
+        width: 50%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img {
+        align-items: center;
+        padding: 2%;
+        margin-left: 50%;
+    }
+
+    #github {
+        font-size: 2em;
+        width: 150%;
+        height: 100vh;
+        margin-bottom: 30%;
+    }
+    .snapshots {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .row {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #skillset {
+        margin-top: 70%;
+        height: 100vh;
+        width: 180%;
+        font-size: 2em;
+        margin-bottom: 80%;
+    }
+
+
+    #experience {
+        margin-top: 40%;
+        height: 100vh;
+        width: 180%;
+        font-size: 2em;
+        margin-bottom: 40%;
     }
 
     #contact {
-        width: 33%;
-        display: flex;
-        flex-direction: column;
+        height: 100vh;
+        width: 180%;
+        font-size: 2em;
+        margin-bottom: 80%;
     }
-}
+
+    .arrows img {
+        left: 50%;
+        display: none;
+    }
+
+    h5 {
+        display: none;
+    }
+}  
