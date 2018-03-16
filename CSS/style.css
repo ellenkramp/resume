@@ -11,10 +11,10 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
-    width: 50px;
+    width: 80px;
     margin-top: 2%;
     opacity: .2;
+    margin-bottom: 30px;
 }
 
 #title-nav {
@@ -109,6 +109,10 @@ h1.name {
 
 }
 
+*:focus {
+    outline: none;
+}
+
 .title {
     display: flex;
     flex-flow: row;
@@ -117,8 +121,8 @@ h1.name {
     padding: 2%;
 }
 .pic-sum p {
-    width: 65%;
-    padding: 2%;
+    width: 75%;
+    padding-bottom: 2%;
 }
 
 .title .name {
@@ -128,9 +132,17 @@ h1.name {
     justify-content: flex-start;
 }
 
-#education, #skillset, #experience, #contact {
+#education, #skillset, #experience, {
     height: 100vh;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+#education p, #skillset p {
+    font-size: 1.3em;
+}
+
+#contact {
+    height: 100vh;
 }
 
 .skills{
@@ -138,6 +150,11 @@ h1.name {
     flex-direction: row;
     width: 50%;
     justify-content: space-between;
+}
+
+#skillset, #contact {
+    margin: 20px 0 20px 0;
+    height: 100vh;
 }
 
 .year {
@@ -200,17 +217,37 @@ a img {
 .contact {
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#experience p {
+    font-size: 1.5em;
+}
+
+#experience .arrows, #education .arrows {
+    padding: 10px;
 }
 
 #contact a img {
-    width: 100px;
+    width: 90px;
+    margin-bottom: -30px;
+    margin-top: none;
 }
 
 #contact .line {
-    width: 1000px;
+    width: 90vw;
+}
+
+#contact h4 {
+    padding-right: .5em;
+    margin-top: none;
+}
+
+h5 {
+    font-size: 1em;
+    padding: 5px;
 }
 
 @media (max-width: 700px) {
@@ -218,5 +255,24 @@ a img {
         width: 33%; }/*side by side*/
     body {
         width: 33%;
+        font-size: 33%;
+    }
+    a img {
+        width: 33%;
+    }
+
+    .row p {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    header {
+        font-size: 33%;
+    }
+
+    #contact {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
     }
 }
