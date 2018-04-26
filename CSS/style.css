@@ -5,25 +5,23 @@ body {
     background-color: rgb(255, 255, 0);
     font-family: 'Questrial', sans-serif;
     scroll-behavior: smooth;
-}
-
-.arrows img {
-    width: 80px;
-    margin-top: 2%;
-    opacity: .2;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-a.arrows {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 #title-nav {
     height: 100vh;
     width: 100vw;
     margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 nav {
@@ -31,6 +29,7 @@ nav {
     flex-flow: row;
     justify-content: flex-start;
     padding-left: 2%;
+    flex-wrap: wrap;
 }
 
 h4 {
@@ -38,8 +37,18 @@ h4 {
     font-size: 2em;
 }
 
-nav h4:hover,
-#contact h4:hover {
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: white;
+}
+
+nav+button:hover,
+a h4:hover {
     background-color: white;
     cursor: pointer;
 }
@@ -94,7 +103,7 @@ h1.name {
     flex-direction: column;
     align-content: flex-start;
     font-size: 11em;
-    margin: 10 0 0 0;
+    margin: 0 0 0 0;
     line-height: .8em;
 }
 
@@ -107,7 +116,7 @@ h1.name {
     text-orientation: sideways;
     writing-mode: vertical-rl;
     line-height: .8em;
-    margin: 10 0 0 0;
+    margin: 0 0 0 0;
 
 }
 
@@ -120,7 +129,7 @@ h1.name {
     flex-flow: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2%;
+    padding: none;
 }
 .pic-sum p {
     width: 75%;
@@ -181,6 +190,7 @@ h1.name {
 
 #education .logos img {
     height: 10%;
+    width: 10%;
     object-fit: cover;
 }
 
@@ -358,12 +368,11 @@ h5 {
         margin-bottom: 80%;
     }
 
-    .arrows img {
-        left: 50%;
+    h5 {
         display: none;
     }
 
-    h5 {
-        display: none;
+    .target {
+        background-color: green;
     }
 }  
