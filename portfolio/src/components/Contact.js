@@ -3,7 +3,7 @@ import {HashRouter as Router, Link, Route} from 'react-router-dom';
 import { Home } from './Home';
 
 export const Contact = () => 
-    <div id="contact">
+    (<div id="contact">
         <header>Contact</header>
         <div className="line"></div> 
         <div className="contact">
@@ -30,4 +30,4 @@ export const Contact = () =>
             <Link to="/index.html">home</Link>
             <Route path="/index.html" component={Home}/>
         </Router>
-    </div>
+    </div>)

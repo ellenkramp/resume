@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Nav } from './Nav';
+import { Nav, Router } from './Nav';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <Nav />
+        <Router>
+          <Nav />
+        </Router>
       </div>
     );
   }

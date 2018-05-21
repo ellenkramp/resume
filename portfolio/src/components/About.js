@@ -4,8 +4,8 @@ import {HashRouter as Router, Link, Route} from 'react-router-dom';
 import { Nav } from '../Nav';
 
 export const About = () =>
-    <Nav>
-        <div id="about">
+        (<div id="about">
+            <Nav />
             <div className="pic-sum">
             <header>about Ellen</header>
             <div className="line"></div>
@@ -18,5 +18,4 @@ export const About = () =>
                         <Route path="/index.html" component={Home}/>
                     </Router>
             </div>
-        </div>
-    </Nav>
+        </div>)

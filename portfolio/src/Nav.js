@@ -8,7 +8,7 @@ import { Experience } from './components/Experience';
 import { Contact } from './components/Contact';
 import { Home } from './components/Home';
 
-const Router = () =>
+export const Router = () =>
     <HashRouter>
         <Switch>
             <Route path="/about" component={About} />
@@ -22,7 +22,7 @@ const Router = () =>
     </HashRouter>
 
 export const Nav = () =>
-    <Router>
+    (<div>
         <button>
             <Link to="/about">About</Link>
         </button>
@@ -41,4 +41,4 @@ export const Nav = () =>
         <button>
             <Link to="/contact">Contact</Link>
         </button>
-    </Router>
+    </div>)
