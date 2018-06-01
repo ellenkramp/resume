@@ -1,6 +1,4 @@
 import React from 'react';
-import {HashRouter as Router, Link, Route} from 'react-router-dom';
-import { Home } from './Home';
 
 export const Contact = () => 
     (<div id="contact">
@@ -26,8 +24,4 @@ export const Contact = () =>
             <h4>GitHub</h4>
             </a>
         </div>
-        <Router>
-            <Link to="/index.html">home</Link>
-            <Route path="/index.html" component={Home}/>
-        </Router>
     </div>)
