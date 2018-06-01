@@ -1,11 +1,7 @@
 import React from 'react';
-import { Home } from './Home';
-import {HashRouter as Router, Link, Route} from 'react-router-dom';
-import { Nav } from '../Nav';
 
 export const About = () =>
-    <Nav>
-        <div id="about">
+        (<div id="about">
             <div className="pic-sum">
             <header>about Ellen</header>
             <div className="line"></div>
@@ -13,10 +9,5 @@ export const About = () =>
                         for learning and am constantly looking for new topics to explore, whether it's new libraries and frameworks
                         like React or podcasts on world history and cryptocurrency.
                     </p>
-                    <Router>
-                        <Link to="/index.html">home</Link>
-                        <Route path="/index.html" component={Home}/>
-                    </Router>
             </div>
-        </div>
-    </Nav>
+        </div>)
