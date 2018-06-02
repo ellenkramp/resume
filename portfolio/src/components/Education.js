@@ -10,13 +10,13 @@ export const Education = () =>
         <div className="logos">
                 <img 
                 alt="digitalcrafts"
-                src="https://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png" />
+                src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2694/s300/digitalcrafts-logo-1200x1200.jpg" />
                 <img 
                 alt="freecodecamp"
-                src="https://design-style-guide.freecodecamp.org/downloads/freeCodeCamp-alternative.png" 
+                src="https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1486990003/n3zpgaiqxb9ioz0tysxw.png" 
                 id="free-cc" />
                 <img
                 alt="USF" 
-                src="https://advance.fiu.edu/_assets/images/USF.bmp" />
+                src="https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1400311986/p1pmikzoe1pu1rlzsr8o.jpg" />
         </div>
     </div>

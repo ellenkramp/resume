@@ -8,13 +8,13 @@ export const Contact = () =>
         <a href="mailto:ellenkramp@gmail.com">
             <img 
             alt="email" 
-            src="http://webiconspng.com/wp-content/uploads/2017/01/Mail-Modern-Icon.png" />
+            src="https://image.flaticon.com/icons/svg/684/684816.svg" />
             <h4>ellenkramp@gmail.com</h4>
             </a>
         <a href="www.linkedin.com/in/ellenkramp">
             <img 
             alt="linkedin" 
-            src="https://freeiconshop.com/wp-content/uploads/edd/linkedin-outline.png" />
+            src="https://image.flaticon.com/icons/svg/56/56591.svg" />
             <h4>LinkedIn</h4>
             </a>
         <a href="www.GitHub.com/ellenkramp">
